@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="296"
+   height="128"
+   viewBox="0 0 78.316665 33.866666"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="daniel.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   sodipodi:docname="drawing.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:export-bgcolor="#ffffffff"
+     inkscape:zoom="2.9354653"
+     inkscape:cx="144.95147"
+     inkscape:cy="97.599518"
+     inkscape:window-width="2538"
+     inkscape:window-height="1387"
+     inkscape:window-x="8"
+     inkscape:window-y="8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <rect
+       x="-140.2931"
+       y="30.738067"
+       width="103.01186"
+       height="51.105331"
+       id="rect3" />
+    <rect
+       x="0"
+       y="0"
+       width="296"
+       height="128"
+       id="rect2" />
+    <rect
+       x="0"
+       y="0"
+       width="296"
+       height="128"
+       id="rect1" />
+    <rect
+       x="-140.29311"
+       y="30.738068"
+       width="55.062149"
+       height="54.330502"
+       id="rect3-0" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text1"
+       style="fill:black;fill-opacity:1;line-height:1.25;stroke:none;font-family:'Yanone Kaffeesatz';font-style:normal;font-weight:bold;font-size:40px;white-space:pre;shape-inside:url(#rect1);-inkscape-font-specification:'Yanone Kaffeesatz Bold';font-stretch:normal;font-variant:normal" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.95616564,0,0,0.95616564,8.6954309,-3.951621)"
+       id="text2"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect2);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="0"
+         y="36.44385"
+         id="tspan4"><tspan
+           style="font-weight:bold;font-family:'Yanone Kaffeesatz';-inkscape-font-specification:'Yanone Kaffeesatz Bold'"
+           id="tspan1">daniel</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.15790373,0,0,0.15790373,23.682836,-2.9929884)"
+       id="text3"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect3);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="-140.29297"
+         y="67.182132"
+         id="tspan6"><tspan
+           style="font-family:'Yanone Kaffeesatz';-inkscape-font-specification:'Yanone Kaffeesatz'"
+           id="tspan5">he/him</tspan></tspan></text>
+  </g>
+</svg>

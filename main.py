@@ -15,6 +15,23 @@ def update(speed=2):
     badger.set_update_speed(speed)
     badger.update()
 
+makespace_last_updated = time.time()
+
+def makespace_png():
+    global makespace_last_updated
+    delta = time.time() - makespace_last_updated
+    if prev_program == program_idx and delta >= 10:
+        print('off')
+        badger2040.turn_off()
+        return
+    if prev_program == program_idx:
+        return
+    fill()
+    png.open_file("makespace.png")
+    png.decode(0, 0)
+    update(1)
+    makespace_last_updated = time.time()
+
 daniel_png_last_updated = time.time()
 
 def daniel_png():
@@ -71,12 +88,13 @@ def lets_talk():
 
 
 programs = [
+    makespace_png,
     daniel_png,
     lets_talk,
 ]
 
 
-program_idx = 1
+program_idx = 2
 prev_program = 0
 programs[program_idx - 1]()
 
