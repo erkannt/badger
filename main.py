@@ -4,10 +4,6 @@ from pngdec import PNG
 badger = badger2040.Badger2040()
 png = PNG(badger.display)
 
-prev_program = 1
-program = 1
-program_count = 2
-
 
 def white():
     badger.set_pen(15)
@@ -46,6 +42,9 @@ programs = [
     daniel_png,
     daniel_txt,
 ]
+prev_program = 2
+program = 1
+program_count = len(programs)
 
 
 def clamp(n, smallest, largest):
