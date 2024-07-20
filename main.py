@@ -15,15 +15,22 @@ def update(speed=2):
     badger.set_update_speed(speed)
     badger.update()
 
+daniel_png_last_updated = time.time()
 
 def daniel_png():
-    if prev_program == program:
+    global daniel_png_last_updated
+    delta = time.time() - daniel_png_last_updated
+    if prev_program == program_idx and delta >= 10:
+        print('off')
+        badger2040.turn_off()
+        return
+    if prev_program == program_idx:
         return
     fill()
     png.open_file("daniel.png")
     png.decode(0, 0)
     update(1)
-    badger2040.turn_off()
+    daniel_png_last_updated = time.time()
 
 
 def clamp(n, smallest, largest):
@@ -48,7 +55,7 @@ def lets_talk():
     global last_lets_talk_update
     global current_topic
     time_delta = time.time() - last_lets_talk_update
-    if not time_delta > RATE and prev_program == program:
+    if not time_delta > RATE and prev_program == program_idx:
         return
     last_lets_talk_update = time.time()
 
@@ -69,17 +76,17 @@ programs = [
 ]
 
 
-program = 1
+program_idx = 1
 prev_program = 0
-programs[program - 1]()
+programs[program_idx - 1]()
 
 while True:
-    prev_program = program
+    prev_program = program_idx
     program_count = len(programs)
     if badger.pressed(badger2040.BUTTON_UP):
-        program = clamp(program + 1, 1, program_count)
+        program_idx = clamp(program_idx + 1, 1, program_count)
     if badger.pressed(badger2040.BUTTON_DOWN):
-        program = clamp(program - 1, 1, program_count)
-    if prev_program != program:
-        print(program)
-    programs[program - 1]()
+        program_idx = clamp(program_idx - 1, 1, program_count)
+    if prev_program != program_idx:
+        print(f"Running program {program_idx}")
+    programs[program_idx - 1]()
