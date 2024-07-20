@@ -23,6 +23,7 @@ def daniel_png():
     png.open_file("daniel.png")
     png.decode(0, 0)
     update(1)
+    badger2040.turn_off()
 
 
 def clamp(n, smallest, largest):
